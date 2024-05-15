@@ -1,0 +1,43 @@
+/*universal Selector*/
+* {
+    font-family: monospace;
+    border: 1px solid red;
+}
+
+/*elementselector*/
+body{
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: aquamarine;
+    color: rgba(17, 33, 39, 0.693);
+
+    
+}
+
+main {
+    font-family: 'Lucida Sans';
+}
+
+h1, h2 {
+    color: blue;
+}
+
+/*paragraphselector*/
+p{
+    color: #333;
+}
+
+p span{
+    text-transform: uppercase;
+    background-color: gold;
+}
+/*classselector*/
+.gray {
+    color: gray;
+}
+
+/*id selector*/
+#second {
+    font-style: italic;
+}
