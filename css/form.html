@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <div>
+        <input name="name" type="text" placeholder="Name">
+        <input name="password" type="password" placeholder="Password">
+        </div>
+        <div>
+            Favorite color?
+            <input name="color" type="radio" value="red"> Red
+            <input name="color" type="radio" value="green"> green
+            <input name="color" type="radio" value="blue"> blue
+            <input name="color" type="radio" value="Other"> Other
+        </div>
+        <div>
+            <input name="Country" list="Countries" placeholder="Country">
+            <datalist id="Countries">
+                <option value="Afghanistan"></option>
+                <option value="Albania"></option>
+                <option value="Algeria"></option>
+                <option value="Andorra"></option>
+                <option value="Angola"></option>
+                <option value="Antigua and Barbuda"></option>
+                <option value="Australia"></option>
+                <option value="Austria"></option>
+                <option value="Kenya"></option>
+            </datalist>
+        </div>
+    </form>
+</body>
+</html>
