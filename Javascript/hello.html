@@ -9,9 +9,16 @@
         // creating a function in javascript
         function hello(){
             // alert("Hello User!");
-            document.querySelector('h1').innerHTML =' Goodbye!'; //manipulating something on the page ie 
+            const heading = document.querySelector('h1');
+            if(heading.innerHTML === 'Hello!'){
+                heading.innerHTML =' Goodbye!'; //manipulating something on the page ie 
                                         //looks through a page and extract something from the page
+        } else{
+            heading.innerHTML = 'Hello!'
         }
+
+    }
+            
 
     </script>
 
