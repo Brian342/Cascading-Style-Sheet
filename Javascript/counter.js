@@ -9,7 +9,7 @@ function count(){
     }
 }
 //functional programming
-document.addEventListener('DOMcontentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('button').onclick = count;
 
 });//addEventListener takes 2 actions the  event and the function
