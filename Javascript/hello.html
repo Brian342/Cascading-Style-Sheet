@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello</title>
     <script>
+    //     // creating a function in javascript for a button
+    //     function hello(){
+    //         // alert("Hello User!");
+    //         const heading = document.querySelector('h1');
+    //         if(heading.innerHTML === 'Hello!'){
+    //             heading.innerHTML =' Goodbye!'; //manipulating something on the page ie 
+    //                                     //looks through a page and extract something from the page
+    //     } else{
+    //         heading.innerHTML = 'Hello!'
+    //     }
+    // }
 
-        // creating a function in javascript
-        function hello(){
-            // alert("Hello User!");
-            const heading = document.querySelector('h1');
-            if(heading.innerHTML === 'Hello!'){
-                heading.innerHTML =' Goodbye!'; //manipulating something on the page ie 
-                                        //looks through a page and extract something from the page
-        } else{
-            heading.innerHTML = 'Hello!'
-        }
+        document.addEventListener('DOMContentLoaded', function(){
 
-    }
+            document.querySelector('form').onsubmit = function() {
+                const name = document.querySelector('#name').value;
+                alert(`Hello, ${name}`)
+            };
+        });
             
 
     </script>
@@ -25,6 +31,15 @@
 </head>
 <body>
     <h1>Hello!</h1>
-    <button onclick="hello()">Click Here</button>
+    <form> 
+        <input autofocus id="name" placeholder="Name" type="text">
+        <input type="Submit">
+    </form>
+    <!-- <button onclick="hello()">Click Here</button> -->
+  
 </body>
 </html>
+<!--queryselector
+document.queryselector('tag')
+document.queryselector('#id')
+document.queryselector('.class')-->
