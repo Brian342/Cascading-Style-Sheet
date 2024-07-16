@@ -4,12 +4,14 @@ function count(){
     counter++;
     document.querySelector('h1').innerHTML = counter;
     
-    if (counter % 10 === 0) {
-        alert(`Count is now ${counter}`); // `` they are know as template literal
-    }
+    // if (counter % 10 === 0) {
+    //     alert(`Count is now ${counter}`); // `` they are know as template literal
+    // }
 }
 //functional programming
 document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('button').onclick = count;
+
+    setInterval(count,1000);
 
 });//addEventListener takes 2 actions the  event and the function
