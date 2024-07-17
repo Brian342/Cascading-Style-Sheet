@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Exchange</title>
     <script>
-        
+        document.addEventListener('DOMContentLoaded',function(){
+            fetch('https://v6.exchangerate-api.com/v6/661c2a72879fb0ca1ba7dc4a/latest/USD')
+            .then(response => response.json())
+            .then(data => {
+                const rate = data.conversion_rates.EUR;
+                document.querySelector('body').innerHTML = `1 USD is equal to ${rate.toFixed(3)} EUR.`;
+            });
+        });
     </script>
 </head>
 <body>
