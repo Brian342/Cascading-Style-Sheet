@@ -22,11 +22,19 @@
             animation-name: move;
             animation-duration: 5s;
             animation-fill-mode: forwards;
-            animation-iteration-count: 2;
+            animation-iteration-count: infinite;
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function (){
+
+             const h1 = document.querySelector('h1');
+             h1.style.animationPlayState = 'paused'
+        });
+    </script>
 </head>
 <body>
+    <button>Click Here!</button>
     <h1>Welcome!</h1>
 </body>
 </html>
