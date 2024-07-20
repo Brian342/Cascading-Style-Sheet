@@ -6,7 +6,7 @@
     <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <title>Counter</title>
+    <title>Addition</title>
 </head>
 <body>
     <div id="app"></div>
@@ -17,29 +17,41 @@
         function App() {
 
            
-            const [state, setState] = React.userState({
+            const [state, setState] = React.useState({
                 num1: 1,
                 num2: 2,
-                response: ""
+                response: "",
+                score: 0
             });
+
+            function inputKeyPress(event) {
+                if (event.key === "Enter") {
+                    const answer = parseInt(state.response)
+                    if (state.num1 + state.num2 === state.response){
+                        //user got question right
+                }else {
+                    //user got question wrong
+                }
+            } 
 
             function updateResponse(event) {
                 setState({
                     ...state,
                     response: event.target.value
-            });
-
+                });
             }
+    
+            
             return (
                 <div>
-
                     <div>{state.num1} + {state.num2}</div>
-                    <input onChange = {updateResponse} value={state.response} />
-                    </div>
-            )
-        }
+                    <input onKeyPress = {inputKeyPress} onChange={updateResponse} value={state.response} />
+                    <div>Score: {state.score}</div>
+                </div>
+            );
+        
 
-    
+        }
 
         ReactDOM.render(<App />, document.querySelector('#app'));
     </script>
