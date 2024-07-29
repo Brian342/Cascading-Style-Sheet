@@ -13,7 +13,7 @@ class WebpageTests(unittest.TestCase):
 
     def test_title(self):
         driver.get(file_uri("Sample.html"))
-        self.assertEqual(driver.title, "Sample")
+        self.assertEqual(driver.title, "counter")
     
     def test_increase(self):
         driver.get(file_uri("Sample.html"))
