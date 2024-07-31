@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+
+  web:
+    build: .
+    volumes:
+        - .:/Users/briankimanzi/Documents/PythonProgramming/Web/webdjango/airline
+    ports:
+          - "8000:8000"
+
+
