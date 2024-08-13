@@ -1,13 +1,3 @@
-/*arithmetic operators = operands (values, variables, etc)
-                        operators (+ - * /)
-                        eg. 11 = x + 5*/
-
-let students = 50;
-
-// students = student + 1;
-// students = students - 1;
-// students = students * 2;
-// students = students / 2;
-// students = students ** 2;
-students = students % 2;
-console.log(students);
+/* How to accept user input
+1. Easy way = window prompt
+2. Proffessional way = HTML textbox*/
