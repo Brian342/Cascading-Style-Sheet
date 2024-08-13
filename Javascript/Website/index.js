@@ -9,5 +9,5 @@
 // /*
 // This is a multi-line comment */
 
-document.getElementById(`myH1`).textContent = `Hello`; // used for changing Html content
-document.getElementById(`myP`).textContent = `I like Pizza`;
+// document.getElementById(`myH1`).textContent = `Hello`; // used for changing Html content
+// document.getElementById(`myP`).textContent = `I like Pizza`;
