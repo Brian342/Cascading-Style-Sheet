@@ -3,8 +3,13 @@
 2. Proffessional way = HTML textbox*/
 
 // 1. Easy way
-let userName;
+// let username = window.prompt("What's your username?")
 
-username = window.prompt("What's your username?")
+// console.log(`Your username is ${username}`)
 
-console.log(username)
+// proffesional way
+let username ;
+document.getElementById("mySubmit").onclick = function(){
+    username = document.getElementById("myText").value;
+    console.log(`Your username is ${username}`)
+}
