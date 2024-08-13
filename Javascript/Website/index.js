@@ -7,9 +7,11 @@
 
 // console.log(`Your username is ${username}`)
 
-// proffesional way
-let username ;
+// profesional way
+let username;
 document.getElementById("mySubmit").onclick = function(){
     username = document.getElementById("myText").value;
-    console.log(`Your username is ${username}`)
+    // console.log(username);
+    document.getElementById("myh1").textContent = `Hello ${username}`;
+
 }
