@@ -7,11 +7,20 @@ let x = 100;
 
 // console.log(x);
 // Number Data type
-let age = 25;
-let price = 10.99;
-let gpa = 2.1;
+// let age = 25;
+// let price = 10.99;
+// let gpa = 2.1;
 
-console.log(typeof gpa); // used to dispay the datatype of variable
-console.log(`You are ${age} years old`);
-console.log(`The price is $${price}`);
-console.log(`Your GPA is ${gpa}`);
+// Strings
+// let firstName = "Bro"
+// let favoriteFood = "Pizza"
+// let email = "Bro@gmail.com"
+
+// Boolean
+let online = false;
+let forsale = true;
+let isstudent = true
+
+console.log(`Bro is online ${online}`);
+console.log(`Is this car for sale: ${forsale}`);
+console.log(`Enrolled: ${isstudent}`)
