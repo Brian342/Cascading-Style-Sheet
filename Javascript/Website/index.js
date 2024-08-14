@@ -1,20 +1,12 @@
-/*Type Conversion = change the datatype of a value to another
-                    (Strings, numbers, boolean)*/
+/*const = a variable that can't be changed */
 
-// let age = window.prompt(`How old are you?`);
-// age = Number(age);
-// age += 1;
+let pi = 3.14159
+let radius;
+let circumference;
 
-// console.log(age, typeof age);
+ radius = window.prompt(`Enter the radius of the circle`);
+ radius = Number(radius);
 
-let x = "";
-let y = "";
-let z = "";
+ circumference = 2 * pi * radius
 
-x = Number(x); // not a number
-y = String(y);
-z = Boolean(z); // returns a true or false
-
-console.log(x, typeof x);
-console.log(y, typeof y);
-console.log(z, typeof z); // true or false
+ console.log(circumference)
