@@ -2,12 +2,15 @@
                 if not, do something */
 
 
-let age = 25;
-let hasLicense = false
+let age = 18;
+let hasLicense = true
 
-if (age >= 16){
-        console.log("You are old enough to drive");
+if(age >= 18){
+        console.log("You are old enough to enter this site");
 }
-else{
-        console.log("You must be 16+ to have a license");
+else if(age < 0) {
+        console.log("Your age can't be below 0");
+}
+else {
+        console.log("You must be 18+ to enter this site");
 }
