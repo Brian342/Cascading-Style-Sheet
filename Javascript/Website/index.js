@@ -1,19 +1,31 @@
-/* Ternary operator = a shortcut to if{} and else{} statements
-helps to assign a variable based on a condition
-condition ? codeiftrue : codeiffalse */
-// let age = 21;
+/*Switch = can  be an efficient replacement to many else if statements */
 
-// let message = age >= 18 ? `you're an adult` : `you're a minor`;
-// console.log(message);
+let day = "pizza";
 
-// let time = 16;
-// let greeting = time < 12 || time > 18 ? 'Good morning' : `Good afternoon`;
-// console.log(greeting); // Good afternoon
+switch(day){
+       case 1:
+                console.log("Today is Monday");
+                break;
+       case 2:
+                console.log("Today is Tuesday");
+                break;
+       case 3:
+                console.log("Today is Wednesday");
+                break;
+        case 4:
+                console.log("Today is Thursday");
+                break;
+        case 5:
+                console.log("Today is Friday");
+                break;
+        case 6:
+                console.log("Today is Saturday");
+                break;
+        case 7:
+                console.log("Today is Sunday");
+                break;
+        default:
+                console.log(`${day} is not a day`);
 
-// let isstudent = true;
-// let message = isstudent ? `You are a student` : `You are not a student`;
-// console.log(message); // You are a student
 
-let purchaseAmount = 99;
-let discount = purchaseAmount >= 100 ? 10 : 0;
-console.log(`Your total is ${purchaseAmount - purchaseAmount * discount/100}`); // 10
+}
