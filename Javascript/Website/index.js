@@ -1,31 +1,27 @@
 /*Switch = can  be an efficient replacement to many else if statements */
 
-let day = "pizza";
+let textScore = 92;
+let letterGrade;
 
-switch(day){
-       case 1:
-                console.log("Today is Monday");
+switch(true){
+        case textScore >= 90:
+                letterGrade = "A";
                 break;
-       case 2:
-                console.log("Today is Tuesday");
+        case textScore >= 80:
+                letterGrade = "B";
                 break;
-       case 3:
-                console.log("Today is Wednesday");
+        case textScore >= 70:
+                letterGrade = "C";
                 break;
-        case 4:
-                console.log("Today is Thursday");
+        case textScore >= 60:
+                letterGrade = "D";
                 break;
-        case 5:
-                console.log("Today is Friday");
-                break;
-        case 6:
-                console.log("Today is Saturday");
-                break;
-        case 7:
-                console.log("Today is Sunday");
+        case textScore >= 50:
+                letterGrade = "E";
                 break;
         default:
-                console.log(`${day} is not a day`);
-
-
+                letterGrade = "F";
+                break;
+        
 }
+console.log(letterGrade); // Output: A
