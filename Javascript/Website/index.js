@@ -12,3 +12,8 @@ console.log(userName.toLowerCase()) // used to convert a string to lowercase
 console.log(userName.toUpperCase()) // used to convert a string to uppercase
 console.log(userName.trim()) // used to remove spaces from a string
 console.log(userName.replace("Bro", "Brother")) // used to replace a value in a string
+console.log(userName.split("")) // used to split a string into an array
+console.log(userName.substring(0, 3)) // used to get a part of a string
+console.log(userName.slice(0, 3)) // used to get a part of a string
+let result = userName.startsWith(" ");
+console.log(result)
