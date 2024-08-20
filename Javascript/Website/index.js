@@ -1,31 +1,7 @@
-/* Checked = property that determines the checked state of an
-        HTML checkbox or radio button element */
-const myCheckBox = document.getElementById("myCheckBox");
-const visaBtn = document.getElementById("visaBtn");
-const MastercardBtn = document.getElementById("MastercardBtn");
-const paypalBtn = document.getElementById("paypalBtn");
-const mySubmit = document.getElementById("mySubmit");
-const subResult = document.getElementById("subResult");
-const paymentResult = document.getElementById("paymentResult");
+/* Ternary operator = a shortcut to if{} and else{} statements
+helps to assign a variable based on a condition
+condition ? codeiftrue : codeiffalse */
+let age = 21;
 
-mySubmit.onclick = function(){
-       if(myCheckBox.checked){
-        subResult.textContent = `You are subscribed`;
-       } 
-       else{
-        subResult.textContent = `You are not subscribed`;
-       }
-
-       if(visaBtn.checked){
-        paymentResult.textContent = `You are paying with Visa`;
-       }
-       else if(MastercardBtn.checked){
-        paymentResult.textContent = `You are paying with Mastercard`;
-       }
-       else if(paypalBtn.checked){
-        paymentResult.textContent = `You are paying with PayPal`;
-       }
-       else{
-        paymentResult.textContent = `You must select a payment type`;
-       }
-}
+let message = age >= 18 ? `you're an adult` : `you're a minor`;
+console.log(message);
