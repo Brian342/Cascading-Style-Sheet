@@ -1,23 +1,9 @@
-/* Strings methods = allow you to manipulate and work with text (strings) */
+/*String slicing = creating a substring from a 
+        portion of another string
+        string.slice(start, end)
+ */
 
-let userName = "BroCode";
+const fullName = "Bro code"
 
-console.log(userName.charAt(0)) // used to get a specific value 
-console.log(userName.charCodeAt(0)) // used to get the ASCII value of a character
-console.log(userName.indexOf("o")) // used to get the index of a specific value
-console.log(userName.lastIndexOf("o")) // used to get the last index of a specific value
-console.log(userName.length) // used to get the length of a string
-console.log(userName.localeCompare("BroCode")) // used to compare two strings
-console.log(userName.toLowerCase()) // used to convert a string to lowercase
-console.log(userName.toUpperCase()) // used to convert a string to uppercase
-console.log(userName.trim()) // used to remove spaces from a string
-console.log(userName.replace("Bro", "Brother")) // used to replace a value in a string
-console.log(userName.split("")) // used to split a string into an array
-console.log(userName.substring(0, 3)) // used to get a part of a string
-console.log(userName.slice(0, 3)) // used to get a part of a string
-let result = userName.startsWith(" ");
-console.log(result)
-
-let phoneNumber = "123-456-789";
-phoneNumber = phoneNumber.replaceAll("-", "")
-console.log(phoneNumber);
+let firstName = fullName.slice(0, 2)
+console.log(firstName)
