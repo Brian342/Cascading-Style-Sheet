@@ -1,14 +1,5 @@
-/* Logical Operators = used to combine or manipulate boolean values
-(True or False)
-AND = &&
-OR = ||
-NOT = ! */
-
-const temp = 20;
-if (temp > 0 || temp <= 30) {
-        console.log("The weather is Good and Nice");
-        
-}
-else{
-        console.log("The weather is Bad");
-}
+/* = assignment operator
+ == comparison operator (compare if values are equal)
+ === strict equality operator (compare if values & datatype are equal) 
+ != inequality operator
+ !== strict inequality operator*/
