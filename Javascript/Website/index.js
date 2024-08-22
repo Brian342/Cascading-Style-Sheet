@@ -15,19 +15,19 @@ let loggedIn = false;
 let username;
 let password;
 
-while (!loggedIn) {
+do{
         username = window.prompt("Enter your username");
         password = window.prompt("Enter your password");
 
         if(username === "myusername" && password === "mypassword"){
                 loggedIn = true;
-                console.log(`You are logged in! enjoy`)
+                console.log(`You are logged in! enjoy`);
         }
-        else if(username === false){
-                console.log(`Incorrect username`)
+        else if(username !== "myusername" ){
+                console.log(`Incorrect username`);
         }
         else{
-                console.log(`Incorrect password`)
+                console.log(`Incorrect password`);
         }
          
-}
+}while (!loggedIn)
