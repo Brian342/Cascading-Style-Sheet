@@ -1,15 +1,8 @@
-/* = assignment operator
- == comparison operator (compare if values are equal)
- === strict equality operator (compare if values & datatype are equal) 
- != inequality operator
- !== strict inequality operator*/
+/* while loop = repeat some code WHILE some condition is True*/
+let userName = "";
 
-const PI = 3.14;
+while(userName === "" || userName === null){
+        userName = window.prompt("Enter your Name")
+}
 
-if (PI !== "3.14") {
-        console.log("That is PI")
-        
-}
-else{
-        console.log("That is not PI")
-}
+console.log(`Hello ${userName}`)  
