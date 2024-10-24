@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="TextAnimation.css">
 </head>
 <body>
     <section>
         <h2 class="text">Animatejs Text Animation Effects</h2>
     </section>
+    <script src="anime.min.js"></script>
+    <script>
+        // now, split text into words
+        const text = document.querySelector('.text');
+        text.innerHTML = text.textContent.replace(/\s/g, "<span>$&</span>")
+    </script>
 </body>
 </html>
