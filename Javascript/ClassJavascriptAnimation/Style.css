@@ -1,0 +1,34 @@
+/* @import url(); */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', 'Times', 'serif';
+
+}
+body {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: grey;
+}
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 12vw;
+    line-height: 1em;
+    z-index: 1000;
+    font-weight: 900;
+}
