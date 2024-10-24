@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: grey;
+    background: maroon;
 }
 .container {
     position: absolute;
@@ -28,7 +28,20 @@ h2 {
     color: #fff;
     text-align: center;
     font-size: 12vw;
-    line-height: 1em;
+    line-height: 0.5em;
     z-index: 1000;
     font-weight: 900;
+}
+h2 span {
+    font-size: 0.2em;
+    letter-spacing: 0.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.blocks {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background: maroon;
+    box-shadow: 10px 10px 50px rgba(53, 1, 1, 0.2);
 }
