@@ -7,7 +7,7 @@ services:
   web:
     build: .
     volumes:
-        - .:/Users/briankimanzi/Documents/PythonProgramming/Web/webdjango/airline
+        - .:/usr/src/app
     ports:
           - "8000:8000"
 
